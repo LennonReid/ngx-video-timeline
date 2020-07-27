@@ -165,15 +165,16 @@ export class AppComponent implements OnInit {
 
 ## Interfate VideoCellType
 
-|  field  |       name       |    type    | Required/optional |       default       |
+|  field  |       name       |    type    | required/optional |       default       |
 | :----: | :--------------: | :--------: | :-------: | :----------------: |
 | beginTime  |     The start time     |   number,string   |   required    |     undefined      |
 | endTime  |    The end of time    |   number,string   |   required    |     undefined      |
 | style | The background color |  boolean   |   optional    |        VideoCellStyleType        |
 ## Interfate VideoCellStyleType
 
-|  字段  |       名称       |    类型    | 必填/选填 |       默认值       |
+|  field  |       name       |    type    | required/optional |       default       |
 | :----: | :--------------: | :--------: | :-------: | :----------------: |
 | background  |     The background color     |   string   |   required    |     undefined      |
+
 #License
-ngx-video-timeline is licensed under a [MIT License]().
+ngx-video-timeline is licensed under a [MIT License](https://opensource.org/licenses/MIT).
