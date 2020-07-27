@@ -1,0 +1,26 @@
+{
+  "name": "ngx-video-timeline",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^9.1.12",
+    "@angular/core": "^9.1.12"
+  },
+  "dependencies": {
+    "tslib": "^1.10.0"
+  },
+  "description": "a video timeline for ng2+",
+  "keywords": [
+    "clone-deep",
+    "litwak"
+  ],
+  "author": {
+    "name": "Howjune",
+    "email": "lenonrade@gmail.com",
+    "url": "https://github.com/Howjune"
+  },
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/Howjune/ngx-video-timeline"
+  },
+  "homepage": "https://github.com/Howjune/ngx-video-timeline"
+}

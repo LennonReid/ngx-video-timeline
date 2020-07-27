@@ -1,0 +1,17 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [
+      true,
+      "attribute",
+      "ngx-video",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "ngx-video",
+      "kebab-case"
+    ]
+  }
+}
