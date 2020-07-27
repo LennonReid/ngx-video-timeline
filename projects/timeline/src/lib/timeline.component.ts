@@ -10,8 +10,8 @@ import {
     ViewChild
 } from '@angular/core';
 
-import * as moment from 'dayjs';
-
+import * as _moment from 'dayjs';
+const moment = _moment;
 import { interval, Subscription } from 'rxjs';
 
 export class DateUtil {
@@ -284,12 +284,17 @@ export class TimelineComponent implements OnInit, OnChanges {
                 }
             }
         ];
+        this.verticalBarColor = 'rgba(0,0,0,1)';
+        this.bottomLineColor = 'rgba(0,0,0,1)';
+        this.borderColor = '#fff';
+        this.bgColor = '#fff';
+        this.playBarColor = '#448aff';
     }
 
     /**
      * Browser change event
      */
-    @HostListener('window:resize', ['$event'])
+    @HostListener('window:resize', [])
     onResize(): void {
         this.canvas.width = Math.round(this.canvas.parentNode.offsetWidth - 2);
         this.canvasW = this.canvas.parentNode.offsetWidth;
@@ -364,11 +369,6 @@ export class TimelineComponent implements OnInit, OnChanges {
         ];
 
         // Initialization style
-        this.verticalBarColor = 'rgba(0,0,0,1)';
-        this.bottomLineColor = 'rgba(0,0,0,1)';
-        this.borderColor = '#fff';
-        this.bgColor = '#fff';
-        this.playBarColor = '#448aff';
 
         // Minimum width between scales, in units of px 20px
         this.graduationStep = 20;
