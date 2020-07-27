@@ -1,3 +1,7 @@
+
+#Result
+
+![example](../../src/assets/timeline.png)
 #Getting Started
 ```
 npm i ngx-video-timeline --save
