@@ -25,5 +25,8 @@
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true
+  },
+  "compilerOptions": {
+  "skipLibCheck": true
   }
 }

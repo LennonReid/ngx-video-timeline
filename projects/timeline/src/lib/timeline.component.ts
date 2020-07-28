@@ -48,97 +48,30 @@ export interface VideoCellType {
     templateUrl: './timeline.component.html',
     styleUrls: ['./timeline.component.scss']
 })
-export class TimelineComponent implements OnInit, OnChanges {
+export class NgxVideoTimelineComponent implements OnInit, OnChanges {
 
-    // Canvas scale is adjusted according to outer height
-    private _scale = 20;
-    get scale(): number {
-        return (this.canvasHeight / 4.55);
-    }
 
     // The height of the outer canvas
-    private _canvasHeight = 50;
-    get canvasHeight(): number {
-        return this._canvasHeight;
-    }
+    @Input() canvasHeight = 50;
 
-    @Input()
-    set canvasHeight(value: number) {
-        this._canvasHeight = value;
-    }
+    // Canvas scale is adjusted according to outer height
+    scale = this.canvasHeight / 4.55;
 
     // Video playback time
-    private _playTime = new Date().getTime();
-    get playTime(): number | string | Date {
-        return this._playTime;
-    }
-
-    @Input()
-    set playTime(value: number | string | Date) {
-        if (value instanceof String) {
-            this._playTime = new Date(value).getTime();
-        } else if (value instanceof Date) {
-            this._playTime = value.getTime();
-        } else if (typeof value === 'number') {
-            this._playTime = Number(value);
-        }
-    }
+    @Input() playTime: number | string | Date;
 
     // The video plays at twice the speed
-    private _speed = 1;
-    get speed(): number {
-        return 1 / this._speed * 1000;
-    }
-
-    @Input()
-    set speed(value: number) {
-        this._speed = value;
-    }
+    @Input() speed: number;
 
     // Video fast forward value
-    private _forWardValue = 5;
-    get forWardValue(): number {
-        return this._forWardValue * 1000;
-    }
-
-    @Input()
-    set forWardValue(value: number) {
-        this._forWardValue = value;
-    }
+    @Input() forWardValue: number;
 
     // Start time limit: Timestamp
-    private _startTimeThreshold = new Date().getTime() - 1 * 12 * 3600 * 1000;
-    get startTimeThreshold(): number | string | Date {
-        return this._startTimeThreshold;
-    }
-
-    @Input()
-    set startTimeThreshold(value: number | string | Date) {
-        if (value instanceof String) {
-            this._startTimeThreshold = new Date(value).getTime();
-        } else if (value instanceof Date) {
-            this._startTimeThreshold = value.getTime();
-        } else if (typeof value === 'number') {
-            this._startTimeThreshold = Number(value);
-        }
-    }
+    @Input() startTimeThreshold: number | string | Date;
 
     // End time limit: Timestamp
-    private _endTimeThreshold = new Date().getTime() + 1 * 12 * 3600 * 1000;
-    get endTimeThreshold(): number | string | Date {
-        return this._endTimeThreshold;
-    }
+    @Input() endTimeThreshold: number | string | Date;
 
-    @Input()
-    set endTimeThreshold(value: number | string | Date) {
-        if (value instanceof String) {
-            this._endTimeThreshold = new Date(value).getTime();
-        } else if (value instanceof Date) {
-            this._endTimeThreshold = value.getTime();
-        } else if (typeof value === 'number') {
-            this._endTimeThreshold = Number(value);
-        }
-    }
     // relation to Css Start
 
     // color of canvas border
@@ -262,6 +195,11 @@ export class TimelineComponent implements OnInit, OnChanges {
     constructor() {
         // this.startTimeThreshold = new Date().getTime() - 1 * 0.5 * 3600 * 1000;
         // this.endTimeThreshold = new Date().getTime() + 1 * 1 * 3600 * 1000;
+        this.forWardValue = 5000;
+        this.speed = 1000;
+        this.playTime = new Date().getTime();
+        this.startTimeThreshold = new Date().getTime() - 1 * 12 * 3600 * 1000;
+        this.endTimeThreshold = new Date().getTime() + 1 * 12 * 3600 * 1000;
         this.playClick = new EventEmitter<any>();
         this.mouseUp = new EventEmitter<any>();
         this.mouseDown = new EventEmitter<any>();
@@ -486,7 +424,14 @@ export class TimelineComponent implements OnInit, OnChanges {
             // this.drawPalyBar();
         }
         if (changes.startTimeThreshold) {
-            this.startTimeThreshold = changes.startTimeThreshold.currentValue;
+            const value = changes.startTimeThreshold.currentValue;
+            if (changes.startTimeThreshold.currentValue instanceof String) {
+                this.startTimeThreshold = new Date(value).getTime();
+            } else if (value instanceof Date) {
+                this.startTimeThreshold = value.getTime();
+            } else if (typeof value === 'number') {
+                this.startTimeThreshold = Number(value);
+            }
 
             this.hoursPerRuler = Math.ceil((Number(this.endTimeThreshold) - Number(this.startTimeThreshold)) / 1000 / 3600) < 24
                 ? Math.ceil((Number(this.endTimeThreshold) - Number(this.startTimeThreshold)) / 1000 / 3600)
@@ -496,14 +441,29 @@ export class TimelineComponent implements OnInit, OnChanges {
             // this.init(this.startTimestamp, this.timecell, false);
         }
         if (changes.endTimeThreshold) {
-            this.endTimeThreshold = changes.endTimeThreshold.currentValue;
+            const value = changes.endTimeThreshold.currentValue;
+            if (changes.endTimeThreshold.currentValue instanceof String) {
+                this.endTimeThreshold = new Date(value).getTime();
+            } else if (value instanceof Date) {
+                this.endTimeThreshold = value.getTime();
+            } else if (typeof value === 'number') {
+                this.endTimeThreshold = Number(value);
+            }
             this.hoursPerRuler = Math.ceil((Number(this.endTimeThreshold) - Number(this.startTimeThreshold)) / 1000 / 3600) < 24
                 ? Math.ceil((Number(this.endTimeThreshold) - Number(this.startTimeThreshold)) / 1000 / 3600)
                 : 24;
 
         }
         if (changes.playTime) {
-            this.playTime = changes.playTime.currentValue;
+
+            const value = changes.playTime.currentValue;
+            if (changes.playTime.currentValue instanceof String) {
+                this.playTime = new Date(value).getTime();
+            } else if (value instanceof Date) {
+                this.playTime = value.getTime();
+            } else if (typeof value === 'number') {
+                this.playTime = Number(value);
+            }
 
             // use SetTimeOut Timer to make it  asynchronous
             setTimeout(() => {
@@ -513,12 +473,13 @@ export class TimelineComponent implements OnInit, OnChanges {
         }
         if (changes.speed) {
 
-            this.speed = changes.speed.currentValue;
+            this.speed = Number(changes.speed.currentValue) * 1000;
         }
         if (changes.forWardValue) {
 
-            this.forWardValue = changes.forWardValue.currentValue;
+            this.forWardValue = Number(changes.forWardValue.currentValue) * 1000;
         }
+
         if (changes.isPlayClick) {
             if (changes.isPlayClick.currentValue) {
                 this.onPlayClick();

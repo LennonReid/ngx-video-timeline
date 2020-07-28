@@ -11,18 +11,18 @@ export class AppComponent implements OnInit {
 
     speed: number;
     canvasHeight: number;
-    startTimeThreshold: number;
-    endTimeThreshold: number;
+    startTimeThreshold: number | string | Date;
+    endTimeThreshold: number | string | Date;
     videoCells: VideoCellType[];
     playTime: Date;
     isPlayClick: boolean;
 
     constructor() {
-        this.speed = 10;
+        this.speed = 1;
         this.isPlayClick = false;
         this.canvasHeight = 80;
-        this.startTimeThreshold = new Date().getTime() - 1 * 3600 * 1000;
-        this.endTimeThreshold = new Date().getTime() + 1 * 3600 * 1000;
+        this.startTimeThreshold = new Date('2020-07-27 00:00:00');
+        this.endTimeThreshold = new Date('2020-07-29 00:00:00');
         this.videoCells = [];
         this.playTime = new Date();
     }
