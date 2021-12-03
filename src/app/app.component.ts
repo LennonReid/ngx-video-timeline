@@ -21,8 +21,8 @@ export class AppComponent implements OnInit {
         this.speed = 1;
         this.isPlayClick = false;
         this.canvasHeight = 80;
-        this.startTimeThreshold = new Date('2020-07-27 00:00:00');
-        this.endTimeThreshold = new Date('2020-07-29 00:00:00');
+        this.startTimeThreshold = new Date();
+        this.endTimeThreshold = new Date(new Date().getTime() + (3 * 3600 * 1000));
         this.videoCells = [];
         this.playTime = new Date();
     }
