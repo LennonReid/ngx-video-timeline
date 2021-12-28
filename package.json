@@ -23,7 +23,7 @@
     "@angular/router": "~9.1.1",
     "dayjs": "^1.8.30",
     "rxjs": "~6.5.4",
-    "tslib": "^1.10.0",
+    "tslib": "~1.10.0",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {

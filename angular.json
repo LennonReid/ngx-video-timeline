@@ -167,6 +167,7 @@
   },
   "defaultProject": "ngx-video-timeline",
   "cli": {
-    "analytics": false
+    "analytics": false,
+    "packageManager": "yarn"
   }
 }
