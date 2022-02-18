@@ -1,12 +1,13 @@
-
-#Result
+# NgxVideoTimeline
+## [Demo](https://lenonmax.github.io/ngx-video-timeline/)
+## example
 
 ![example](../../src/assets/timeline.png)
-#Getting Started
+## Getting Started
 ```
 npm i ngx-video-timeline --save
 ```
-#Usage
+## Usage
 Import the module into your module
 ```
 import { BrowserModule } from '@angular/platform-browser';
@@ -115,7 +116,6 @@ export class AppComponent implements OnInit {
         
     }
 }
-
 ```
 ## API
 
@@ -139,7 +139,7 @@ export class AppComponent implements OnInit {
 
 ## Interfate VideoCellType
 
-|  field  |       name       |    type    | Required/optional |       default       |
+|  field  |       name       |    type    | required/optional |       default       |
 | :----: | :--------------: | :--------: | :-------: | :----------------: |
 | beginTime  |     The start time     |   number,string   |   required    |     undefined      |
 | endTime  |    The end of time    |   number,string   |   required    |     undefined      |
