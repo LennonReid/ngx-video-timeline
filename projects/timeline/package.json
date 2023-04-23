@@ -1,12 +1,12 @@
 {
   "name": "ngx-video-timeline",
-  "version": "0.1.1",
+  "version": "0.10.15",
   "peerDependencies": {
-    "@angular/common": "^9.1.12",
-    "@angular/core": "^9.1.12"
+    "@angular/common": "^15.2.8",
+    "@angular/core": "^15.2.8"
   },
   "dependencies": {
-    "tslib": "^1.10.0"
+    "tslib": "^2.0.0"
   },
   "description": "a video timeline for ng2+",
   "keywords": [
@@ -17,11 +17,11 @@
   "author": {
     "name": "lenon",
     "email": "lenonrade@gmail.com",
-    "url": "https://github.com/Howjune"
+    "url": "https://github.com/lenonMax"
   },
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/Howjune/ngx-video-timeline"
+    "url": "https://github.com/lenonMax/ngx-video-timeline"
   },
-  "homepage": "https://github.com/Howjune/ngx-video-timeline"
+  "homepage": "https://github.com/lenonMax/ngx-video-timeline"
 }

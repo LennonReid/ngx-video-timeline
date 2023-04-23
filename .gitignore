@@ -27,9 +27,9 @@ node_modules
 
 # misc
 /.angular/cache
-.sass-cache
-connect.lock
-coverage
+/.sass-cache
+/connect.lock
+/coverage
 /libpeerconnection.log
 npm-debug.log
 yarn-error.log

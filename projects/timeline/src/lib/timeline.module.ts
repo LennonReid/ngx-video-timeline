@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { NgxVideoTimelineComponent } from './timeline.component';
-import {CommonModule} from '@angular/common';
+import { CommonModule } from '@angular/common';
 
 
 
