@@ -22,8 +22,7 @@
     "@angular/platform-browser": "~11.2.14",
     "@angular/platform-browser-dynamic": "~11.2.14",
     "@angular/router": "~11.2.14",
-    "dayjs": "^1.11.7",
-    "ngx-video-timeline": "^0.1.8",
+    "ngx-video-timeline": "^0.10.11",
     "rxjs": "~6.5.4",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
