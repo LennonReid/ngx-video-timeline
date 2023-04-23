@@ -3,9 +3,23 @@
 ## example
 
 ![example](../../src/assets/timeline.png)
+
+## Installation
+
+#### Compatibility
+
+| Angular | Latest ngx-colors compatible |
+| ------- | ---------------------------- |
+| 10      | 0.1.7                        |
+| 9      | 0.1.1                        |
+
 ## Getting Started
 ```
-npm i ngx-video-timeline --save
+npm i ngx-video-timeline dayjs --save
+```
+or 
+```
+yarn add ngx-video-timeline dayjs
 ```
 ## Usage
 Import the module into your module

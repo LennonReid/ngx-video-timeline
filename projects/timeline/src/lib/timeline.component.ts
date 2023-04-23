@@ -17,12 +17,11 @@ import { interval, Subscription } from 'rxjs';
 export class DateUtil {
 
     /**
-     * 日期格式为string
-     * @param date 日期
-     * @param format 格式参数
+     * The date format is string
+     * @param date date
+     * @param format date format
      */
     static formatDate(date: Date, format: string): string {
-        // return dateFormat(format, date);
         return moment(date).format(format);
     }
 
