@@ -2,10 +2,29 @@
 ## [Demo](https://lenonmax.github.io/ngx-video-timeline/)
 ## example
 
-![example](./src/assets/timeline.png)
+![example](../../src/assets/timeline.png)
+
+## Installation
+
+#### Compatibility
+
+| Angular | Latest ngx-colors compatible |
+| ------- | ---------------------------- |
+| 15      | 0.1.15                        |
+| 14      | 0.1.12                        |
+| 13      | 0.1.11                        |
+| 12      | 0.1.9                        |
+| 11      | 0.1.8                        |
+| 10      | 0.1.7                        |
+| 9      | 0.1.1                        |
+
 ## Getting Started
 ```
 npm i ngx-video-timeline --save
+```
+or
+```
+yarn add ngx-video-timeline
 ```
 ## Usage
 Import the module into your module
