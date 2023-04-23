@@ -10,6 +10,7 @@
 
 | Angular | Latest ngx-colors compatible |
 | ------- | ---------------------------- |
+| 13      | 0.1.11                        |
 | 12      | 0.1.9                        |
 | 11      | 0.1.8                        |
 | 10      | 0.1.7                        |
@@ -17,11 +18,11 @@
 
 ## Getting Started
 ```
-npm i ngx-video-timeline dayjs --save
+npm i ngx-video-timeline --save
 ```
 or 
 ```
-yarn add ngx-video-timeline dayjs
+yarn add ngx-video-timeline
 ```
 ## Usage
 Import the module into your module
