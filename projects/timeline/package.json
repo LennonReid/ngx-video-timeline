@@ -6,7 +6,7 @@
     "@angular/core": "^9.1.12"
   },
   "dependencies": {
-    "tslib": "^1.10.0"
+    "tslib": "^2.0.0"
   },
   "description": "a video timeline for ng2+",
   "keywords": [
