@@ -5616,10 +5616,10 @@ ng-packagr@^14.2.2:
   optionalDependencies:
     esbuild "^0.15.0"
 
-ngx-video-timeline@^0.1.12:
-  version "0.1.12"
-  resolved "https://registry.npmjs.org/ngx-video-timeline/-/ngx-video-timeline-0.1.12.tgz#3fd0e1e7fa360c7a86e2bedd1d38ab7e04b4e5c1"
-  integrity sha512-ghz4ZGulEq6yyEZ8tSyxGXNePKHXEFWCYAsjeEbs2k7n2gKljQ8W6VCNmO3CTL6t4xveSn+5gMy6agOz9udi4Q==
+ngx-video-timeline@^0.10.14:
+  version "0.10.14"
+  resolved "https://registry.npmjs.org/ngx-video-timeline/-/ngx-video-timeline-0.10.14.tgz#12586e3af328168ca7e5ed7ab7da89e17321d02e"
+  integrity sha512-5gMfwNTn+x9KFpm5rrCLapzv50onNTcfDpT+mBWJtafdfeOLG1PYQwgKEkbj+Y68edbbki30C6ioHtI3lyqvzw==
   dependencies:
     tslib "^2.0.0"
 
