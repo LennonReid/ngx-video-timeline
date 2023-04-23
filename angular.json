@@ -145,7 +145,6 @@
       }
     }
   },
-  "defaultProject": "ngx-video-timeline",
   "cli": {
     "analytics": false,
     "packageManager": "yarn"
