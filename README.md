@@ -2,7 +2,7 @@
 ## [Demo](https://lenonmax.github.io/ngx-video-timeline/)
 ## example
 
-![example](../../src/assets/timeline.png)
+![samplePic](src/assets/timeline.png)
 
 ## Installation
 
