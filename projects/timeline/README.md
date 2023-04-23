@@ -8,7 +8,7 @@
 
 #### Compatibility
 
-| Angular | Latest ngx-colors compatible |
+| Angular | Latest ngx-video-timeline compatible |
 | ------- | ---------------------------- |
 | 15      | 0.1.15                        |
 | 14      | 0.1.12                        |
