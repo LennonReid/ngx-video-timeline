@@ -3388,11 +3388,6 @@ date-format@^4.0.14:
   resolved "https://registry.npmmirror.com/date-format/-/date-format-4.0.14.tgz#7a8e584434fb169a521c8b7aa481f355810d9400"
   integrity sha512-39BOQLs9ZjKh0/patS9nrT8wc3ioX3/eA/zgbKNopnF2wCqJEoxywwwElATYvRsXdnOxA/OQeQoFZ3rFjVajhg==
 
-dayjs@^1.11.7:
-  version "1.11.7"
-  resolved "https://registry.npmjs.org/dayjs/-/dayjs-1.11.7.tgz#4b296922642f70999544d1144a2c25730fce63e2"
-  integrity sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==
-
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3:
   version "2.6.9"
   resolved "https://registry.npmjs.org/debug/-/debug-2.6.9.tgz"
@@ -6281,10 +6276,10 @@ ng-packagr@^10.1.0:
     stylus "^0.54.7"
     terser "^5.0.0"
 
-ngx-video-timeline@^0.1.7:
-  version "0.1.7"
-  resolved "https://registry.npmjs.org/ngx-video-timeline/-/ngx-video-timeline-0.1.7.tgz#fdfe5dc657d911826f9fd0e07f91c0ed8a1f7694"
-  integrity sha512-24VB8+Wu/BneKe8tpxmui3OBKJP26EMuV1ljVLhDdi8hTXBJXyIHNZGQwKIY5u2d3yYh6tfNCbjbwmwy1eGJgA==
+ngx-video-timeline@^0.10.10:
+  version "0.10.10"
+  resolved "https://registry.npmjs.org/ngx-video-timeline/-/ngx-video-timeline-0.10.10.tgz#ae93461e5e6ad1ec065fc1ccd771928076cfe1fd"
+  integrity sha512-rbTqljcARblf1qHnThRUqKDcby6WL76mq+Pfbfyk2VrwclC+HJ27n/QVTQA5LaBPtdCD4af29SOfI4XJy85EIQ==
   dependencies:
     tslib "^2.0.0"
 
