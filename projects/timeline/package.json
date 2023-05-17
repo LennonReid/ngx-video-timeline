@@ -1,9 +1,9 @@
 {
   "name": "ngx-video-timeline",
-  "version": "0.10.15",
+  "version": "0.1.16",
   "peerDependencies": {
-    "@angular/common": "^15.2.8",
-    "@angular/core": "^15.2.8"
+    "@angular/common": "^16.0.1",
+    "@angular/core": "^16.0.1"
   },
   "dependencies": {
     "tslib": "^2.0.0"
