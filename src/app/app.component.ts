@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { VideoCellType } from 'ngx-video-timeline';
+import { VideoCellType, NgxVideoTimelineModule } from 'ngx-video-timeline';
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss']
+    styleUrls: ['./app.component.scss'],
+    standalone: true,
+    imports: [NgxVideoTimelineModule]
 })
 export class AppComponent implements OnInit {
     title = 'ngx-video-timeline';

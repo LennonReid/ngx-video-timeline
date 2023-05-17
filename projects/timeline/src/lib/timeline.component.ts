@@ -10,6 +10,7 @@ import {
     ViewChild
 } from '@angular/core';
 import { interval, Subscription } from 'rxjs';
+import { NgStyle } from '@angular/common';
 
 /**
  * A utility class for working with dates.
@@ -66,7 +67,9 @@ export interface VideoCellType {
 @Component({
     selector: 'ngx-video-timeline',
     templateUrl: './timeline.component.html',
-    styleUrls: ['./timeline.component.scss']
+    styleUrls: ['./timeline.component.scss'],
+    standalone: true,
+    imports: [NgStyle]
 })
 export class NgxVideoTimelineComponent implements OnInit, OnChanges {
 
