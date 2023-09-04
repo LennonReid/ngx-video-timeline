@@ -1,5 +1,5 @@
 # NgxVideoTimeline
-## [Demo](https://lenonmax.github.io/ngx-video-timeline/) or https://ngx-video-timeline.vercel.app/
+## [Demo](https://lennonreid.github.io/ngx-video-timeline/) or https://ngx-video-timeline.vercel.app/
 ## example
 
 ![samplePic](src/assets/timeline.png)
