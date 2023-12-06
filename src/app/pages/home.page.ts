@@ -1,6 +1,6 @@
 import { NgIf } from "@angular/common";
 import { Component, OnInit } from "@angular/core";
-import { NgxVideoTimelineComponent, VideoCellType } from "video-timeline";
+import { NgxVideoTimelineComponent, VideoCellType } from "projects/timeline/src/public-api";
 
 @Component({
   imports: [NgIf, NgxVideoTimelineComponent],
