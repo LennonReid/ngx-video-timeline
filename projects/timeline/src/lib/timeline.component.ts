@@ -22,12 +22,12 @@ import { CanvasPos, VideoCellType } from './interfaces/timeline.interface';
     (dragstart)="onDragStart($event)" (mouseup)="mouseupFunc($event)" (mousewheel)="mousewheelFunc($event)"
     (mousedown)="mousedownFunc($event)" (mousemove)="mousemoveFunc($event)" (mouseout)="mouseoutFunc()"></canvas>
     `,
-  styles: `
+  styles: [`
     .canvas {
     width: 100%;
     height: 100%;
 }
-    `,
+    `],
   standalone: true
 })
 export class NgxVideoTimelineComponent implements OnInit, OnChanges {

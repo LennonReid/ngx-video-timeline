@@ -17,11 +17,8 @@ import { NgxVideoTimelineComponent, VideoCellType } from "projects/timeline/src/
       (playClick)="onPlayClick($event)"
     ></ngx-video-timeline>
     <div>
-      @if (isPlayClick) {
-      <button (click)="onPause()">pause</button>
-      } @else {
-      <button (click)="onPlay()">play</button>
-      }
+      <button *ngIf="isPlayClick" (click)="onPause()">pause</button>
+      <button *ngIf="!isPlayClick" (click)="onPlay()">play</button>
       <button (click)="changeVideo()">changeVideos</button>
     </div>
   `,

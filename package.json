@@ -5,11 +5,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "publish":"cd dist/timeline && npm publish",
+    "publish": "cd dist/timeline && npm publish",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "bundle-report": "webpack-bundle-analyzer dist/ngx-video-timeline/stats-es2015.json",
     "build:github": "ng build --configuration production --output-path docs --base-href /ngx-video-timeline/"
   },
   "private": true,
@@ -23,7 +22,7 @@
     "@angular/platform-browser-dynamic": "^16.0.2",
     "@angular/router": "^16.0.2",
     "rxjs": "~6.5.4",
-    "tslib": "^2.0.0",
+    "tslib": "^2.6.2",
     "zone.js": "~0.13.0"
   },
   "devDependencies": {
@@ -42,7 +41,6 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
     "ng-packagr": "^16.0.0",
-    "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~5.1.3"

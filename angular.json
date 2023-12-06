@@ -15,7 +15,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser-esbuild",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/ngx-video-timeline",
             "index": "src/index.html",
@@ -71,7 +71,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "buildTarget": "ngx-video-timeline:build",
+            "browserTarget": "ngx-video-timeline:build",
             "disableHostCheck": true,
             "host": "0.0.0.0",
             "port": 4202,
@@ -79,14 +79,14 @@
           },
           "configurations": {
             "production": {
-              "buildTarget": "ngx-video-timeline:build:production"
+              "browserTarget": "ngx-video-timeline:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "ngx-video-timeline:build"
+            "browserTarget": "ngx-video-timeline:build"
           }
         },
         "test": {
