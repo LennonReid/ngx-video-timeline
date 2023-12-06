@@ -71,7 +71,11 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "buildTarget": "ngx-video-timeline:build"
+            "buildTarget": "ngx-video-timeline:build",
+            "disableHostCheck": true,
+            "host": "0.0.0.0",
+            "port": 4202,
+            "open": true
           },
           "configurations": {
             "production": {

@@ -1,5 +1,5 @@
 # NgxVideoTimeline
-## [Demo](https://lenonmax.github.io/ngx-video-timeline/)
+## [Demo](https://LennonReid.github.io/ngx-video-timeline/)
 ## example
 
 ![samplePic](src/assets/timeline.png)
@@ -10,6 +10,7 @@
 
 | Angular | Latest ngx-video-timeline compatible |
 | ------- | ---------------------------- |
+| 17      | 0.10.17                        |
 | 16      | 0.10.16                        |
 | 15      | 0.10.15                        |
 | 14      | 0.10.14                        |
