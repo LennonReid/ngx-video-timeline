@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "cd projects/timeline packagr -p ng-package.json",
     "publish":"cd dist/timeline && npm publish",
     "test": "ng test",
     "lint": "ng lint",
