@@ -17,15 +17,14 @@ import { NgxVideoTimelineComponent, VideoCellType } from "video-timeline";
       (playClick)="onPlayClick($event)"
     ></ngx-video-timeline>
     <div>
-    @if (isPlayClick) {
-      <button mat-button (click)="onPause()">pause</button>
-    } @else {
-      <button mat-button (click)="onPlay()">play</button>
-    }
-      <button mat-button (click)="changeVideo()">changeVideos</button>
+      @if (isPlayClick) {
+      <button (click)="onPause()">pause</button>
+      } @else {
+      <button (click)="onPlay()">play</button>
+      }
+      <button (click)="changeVideo()">changeVideos</button>
     </div>
   `,
-  styles: ``,
   standalone: true,
 })
 export default class HomePage implements OnInit {

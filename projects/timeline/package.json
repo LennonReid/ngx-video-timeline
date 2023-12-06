@@ -1,6 +1,9 @@
 {
   "name": "ngx-video-timeline",
-  "version": "0.1.16",
+  "version": "0.1.17",
+  "scripts": {
+    "build": "ng-packagr -p ng-package.json"
+  },
   "peerDependencies": {
     "@angular/common": "^17.0.5",
     "@angular/core": "^17.0.5"
