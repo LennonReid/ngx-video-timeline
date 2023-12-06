@@ -10,6 +10,7 @@
     "module": "es2020",
     "moduleResolution": "node",
     "importHelpers": true,
+    "skipLibCheck": true,
     "target": "ES2022",
     "lib": [
       "es2018",
@@ -26,8 +27,5 @@
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true
-  },
-  "compilerOptions": {
-  "skipLibCheck": true
   }
 }
