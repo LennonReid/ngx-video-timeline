@@ -6,22 +6,22 @@
     "@angular/core": "^16.0.1"
   },
   "dependencies": {
-    "tslib": "^2.0.0"
+    "tslib": "^2.6.2"
   },
   "description": "a video timeline for ng2+",
   "keywords": [
     "angular",
-    "timeline",
+    "video-timeline",
     "video"
   ],
   "author": {
-    "name": "lenon",
+    "name": "LennonReid",
     "email": "lenonrade@gmail.com",
-    "url": "https://github.com/lenonMax"
+    "url": "https://github.com/LennonReid"
   },
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/lenonMax/ngx-video-timeline"
+    "url": "https://github.com/LennonReid/ngx-video-timeline"
   },
-  "homepage": "https://github.com/lenonMax/ngx-video-timeline"
+  "homepage": "https://github.com/LennonReid/ngx-video-timeline"
 }

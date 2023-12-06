@@ -15,7 +15,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:browser-esbuild",
           "options": {
             "outputPath": "dist/ngx-video-timeline",
             "index": "src/index.html",
@@ -71,18 +71,22 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngx-video-timeline:build"
+            "buildTarget": "ngx-video-timeline:build",
+            "disableHostCheck": true,
+            "host": "0.0.0.0",
+            "port": 4202,
+            "open": true
           },
           "configurations": {
             "production": {
-              "browserTarget": "ngx-video-timeline:build:production"
+              "buildTarget": "ngx-video-timeline:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-video-timeline:build"
+            "buildTarget": "ngx-video-timeline:build"
           }
         },
         "test": {
@@ -100,18 +104,6 @@
               "src/styles.scss"
             ],
             "scripts": []
-          }
-        },
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ngx-video-timeline:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "ngx-video-timeline:serve:production"
-            }
           }
         }
       }

@@ -10,15 +10,15 @@
     "module": "es2020",
     "moduleResolution": "node",
     "importHelpers": true,
+    "skipLibCheck": true,
     "target": "ES2022",
     "lib": [
       "es2018",
       "dom"
     ],
     "paths": {
-      "timeline": [
-        "dist/timeline/timeline",
-        "dist/timeline"
+      "video-timeline": [
+        "projects/timeline/src/public-api.ts",
       ]
     },
     "useDefineForClassFields": false
@@ -26,8 +26,5 @@
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true
-  },
-  "compilerOptions": {
-  "skipLibCheck": true
   }
 }
