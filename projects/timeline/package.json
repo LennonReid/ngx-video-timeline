@@ -2,8 +2,7 @@
   "name": "ngx-video-timeline",
   "version": "0.10.17",
   "scripts": {
-    "build": "ng-packagr -p ng-package.json",
-    "publish":"npm publish dist"
+    "build": "ng-packagr -p ng-package.json"
   },
   "peerDependencies": {
     "@angular/common": "^17.0.5",
