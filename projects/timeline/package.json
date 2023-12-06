@@ -11,17 +11,17 @@
   "description": "a video timeline for ng2+",
   "keywords": [
     "angular",
-    "timeline",
+    "video-timeline",
     "video"
   ],
   "author": {
-    "name": "lenon",
+    "name": "LennonReid",
     "email": "lenonrade@gmail.com",
-    "url": "https://github.com/lenonMax"
+    "url": "https://github.com/LennonReid"
   },
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/lenonMax/ngx-video-timeline"
+    "url": "https://github.com/LennonReid/ngx-video-timeline"
   },
-  "homepage": "https://github.com/lenonMax/ngx-video-timeline"
+  "homepage": "https://github.com/LennonReid/ngx-video-timeline"
 }
