@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "cd projects/timeline && ng-packagr -p ng-package.json",
-    "publish":"cd dist/timeline && npm publish",
+    "publish": "cd dist/timeline && npm publish",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -21,6 +21,7 @@
     "@angular/platform-browser": "^17.0.5",
     "@angular/platform-browser-dynamic": "^17.0.5",
     "@angular/router": "^17.0.5",
+    "ngx-video-timeline": "^0.10.17",
     "rxjs": "~7.8.1",
     "tslib": "^2.6.2",
     "zone.js": "~0.14.2"
