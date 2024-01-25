@@ -35,7 +35,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+// Import NgxVideoTimelineModule if you are using a version of Angular that is below Angular V16.
 import { NgxVideoTimelineComponent } from 'ngx-video-timeline';
+
 
 @NgModule({
     declarations: [
@@ -43,6 +45,7 @@ import { NgxVideoTimelineComponent } from 'ngx-video-timeline';
     ],
     imports: [
         BrowserModule,
+        // Import NgxVideoTimelineModule if you are using a version of Angular that is below Angular V16.
         NgxVideoTimelineComponent
     ],
     providers: [],
