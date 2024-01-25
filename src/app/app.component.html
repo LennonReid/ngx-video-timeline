@@ -1,4 +1,7 @@
 
+<video [src]="videoSrc" #videoEle>
+
+</video>
             <div fxLayout="row" fxLayoutAlign="start center"  class="canvas-box">
               <ngx-video-timeline class="canvas-class" [playTime]="playTime" [isPlayClick]="isPlayClick"  [videoCells]="videoCells" [startTimeThreshold]="startTimeThreshold" [endTimeThreshold]="endTimeThreshold"  [canvasHeight]="canvasHeight"  [speed]="speed" (playClick)="onPlayClick($event)" ></ngx-video-timeline>
           </div>
